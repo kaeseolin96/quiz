@@ -2,7 +2,7 @@
   "name": "quizgot",
   "version": "1.0.0",
   "description": "quiz about game of thrones",
-  "main": "index.html",
+  "main": "index.js",
   "dependencies": {
     "http-server": "^0.9.0"
   },
