@@ -1,15 +1,36 @@
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
- 
   <title>Викторина</title>
-  <meta name="description" content="Учусь чему-то новому">
-  <meta name="author" content="KaterinaBoldareva">
-
 </head>
- 
+
 <body>
-  <h1> Что-то получилось!</h1>
+
+<template id="optionAnswerTemplate">
+  <div class="answerTitle">
+    <span></span>
+  </div>
+</template>
+
+<template id="questionTemplate">
+  <div class="question">
+    <h3 data-title class="questionTitle"></h3>
+    <img data-img src="" alt="" class="questionImg">
+    <div class="answerOptions"></div>
+  </div>
+</template>
+
+<div class="mainContainer">
+  <div>
+    <h1 id="pageTitle"></h1>
+    <p id="pageDescription"></p>
+  </div>
+
+  <div id="questionList">
+
+  </div>
+  <div id="quizResult" style="display: none"></div>
+
+</div>
 </body>
 </html>
