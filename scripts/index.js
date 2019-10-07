@@ -11,5 +11,9 @@ const load = (url) => window.fetch(url)
 const questionsJson = load(questionsUrl);
 const resultsJson = load(resultUrl);
 
-let application  = new Application(questionsJson);
+const view = new ApplicationView( {
+    title: document.querySelector('#pageTitle')
+    });
+
+let application  = new Application(view, questionsJson);
 (async () => await application.start())();
