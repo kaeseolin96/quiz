@@ -12,7 +12,13 @@ const questionsJson = load(questionsUrl);
 const resultsJson = load(resultUrl);
 
 const view = new ApplicationView( {
-    title: document.querySelector('#pageTitle')
+    //applicationView
+    title: document.querySelector('#pageTitle'),
+    description: document.querySelector( '#pageDescription'),
+
+    //questionView
+    questionList: document.querySelector( '#questionList'),
+    questionTemplate: document.querySelector('#questionTemplate')
     });
 
 let application  = new Application(view, questionsJson);
