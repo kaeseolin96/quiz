@@ -12,6 +12,6 @@ class ApplicationView {
     renderQuestion (question) {
         const element = Utils.createTemplate(this.config.questionList, this.config.questionTemplate);
 
-        new QuestionView(element);
+        new QuestionView(element, question);
     }
 }
